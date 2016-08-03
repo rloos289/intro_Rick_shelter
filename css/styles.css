@@ -1,8 +1,32 @@
-h1 {
-  color:blue;
+body {
+  background-image: url(http://www.gunnars.com/wp-content/uploads/2014/08/Space.jpg);
+  font-family: "Courier New", Courier, monospace;
 }
 
-img{
+h1 {
+  color:white;
+  text-align: center;
+}
+
+.rick {
+  display: block;
+  margin: 0 auto;
+}
+
+.intro {
+  color: white;
+}
+
+footer {
+  color:white;
+  float: right;
+}
+
+/***********************************
+Creatur Div Layout
+***********************************/
+
+.column img{
   display: block;
   border-radius: 50%;
   height: 200px;
@@ -17,13 +41,19 @@ img{
   margin: 2px;
   border-style: solid;
   padding: 5px 10px 5px 10px;
+  border-radius: 3%;
+  height: 600px;
 }
 
+/***********************************
+Individual creature profiles
+***********************************/
+
 #meeseeks {
-  background-color: blue;
+  background-color: #27b4d2;
 }
 #butt-hamster{
-  background-color: red;
+  background-color: #22b073;
 }
 #pluto{
   background-color: yellow;
@@ -34,8 +64,22 @@ img{
 #beth{
   background-color: pink;
 }
+#parasite{
+  background-color: brown;
+}
 
-/*.sidebar{
-  background-color: yellow;
-  margin: 40px 40px 40px 40px;
-}*/
+/***********************************
+Media Queries
+***********************************/
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+	body {
+		background: #FF6347;
+		color: #FFF;
+	}
+}
+ @media screen and (max-width: 480px) {
+ 	body {
+ 		background: #4682B4;
+ 	}
+}
